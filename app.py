@@ -25,4 +25,5 @@ def convert():
     except ValueError:
         return jsonify({'success': False, 'message': 'Please enter valid numbers.'})
 
-# Remove the if __name__ == '__main__' block for Vercel deployment 
+if __name__ == '__main__':
+    app.run(debug=True) 
